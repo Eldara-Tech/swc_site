@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>swarmcli — lightweight Swarm management</title>
+    <link rel="stylesheet" href="/assets/css/style.css?v=3">
+  </head>
+  <body>
+    <div class="top-lines" aria-hidden="true">
+      <img src="/assets/img/top-lines.svg" alt="" />
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="site-title">
+          <a href="/">
+            <img src="/assets/img/swarmcli_logo_150.png" alt="swarmcli logo" class="site-logo" />
+          </a>
+        </h1>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/topics/install.html">Install</a>
+          <a href="/topics/usage.html">Usage</a>
+          <a href="https://github.com/mosonyi/swarmcli">GitHub</a>
+          <a class="btn btn_gradient btn_sponsor" href="https://github.com/sponsors/mosonyi" target="_blank" rel="noopener">Sponsor</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Manage Swarm clusters faster</h2>
+        <p>swarmcli provides a compact set of commands to inspect, list and manage services, nodes, and stacks in Docker Swarm.</p>
+        <p><a class="btn btn_gradient" href="/topics/install.html">Get started</a></p>
+      </section>
+
+      <section class="features">
+        <article>
+          <h3>Quick inspection</h3>
+          <p>Commands to quickly show node status, service health, and resource usage.</p>
+        </article>
+        <article>
+          <h3>Lightweight</h3>
+          <p>No heavy dependencies — designed to be simple and scriptable.</p>
+        </article>
+        <article>
+          <h3>Extensible</h3>
+          <p>Small codebase intended as a working model and learning resource.</p>
+        </article>
+      </section>
+
+      <section class="example">
+        <h3>Quick example</h3>
+        <pre><code>$ swarmctl nodes
+ID    HOST    STATUS  AVAIL  MANAGER
+1     node1   Ready   Active  Yes
+2     node2   Ready   Active  No
+</code></pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Created from the working model of <a href="https://github.com/mosonyi/swarmcli">mosonyi/swarmcli</a>.</small>
+      </div>
+    </footer>
+    <div class="bottom-lines" aria-hidden="true">
+      <img src="/assets/img/bottom-lines.svg" alt="" />
+    </div>
+  </body>
+</html>
