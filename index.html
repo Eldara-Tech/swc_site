@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>swarmcli — lightweight Swarm management</title>
+    <title>SwarmCLI — lightweight Swarm management</title>
     <link rel="stylesheet" href="/assets/css/style.css?v=3">
   </head>
   <body>
@@ -14,14 +14,13 @@
       <div class="container header-inner">
         <h1 class="site-title">
           <a href="/">
-            <img src="/assets/img/swarmcli_logo_150.png" alt="swarmcli logo" class="site-logo" />
+            <img src="/assets/img/swarmcli_logo_150.png" alt="SwarmCLI logo" class="site-logo" />
           </a>
         </h1>
         <nav class="nav">
           <a href="/">Home</a>
           <a href="/topics/install.html">Install</a>
-          <a href="/topics/usage.html">Usage</a>
-          <a href="https://github.com/mosonyi/swarmcli">GitHub</a>
+          <a class="nav-link-github" href="https://github.com/mosonyi/swarmcli" target="_blank" rel="noopener">GitHub</a>
           <a class="btn btn_gradient btn_sponsor" href="https://github.com/sponsors/mosonyi" target="_blank" rel="noopener">Sponsor</a>
         </nav>
       </div>
@@ -29,9 +28,38 @@
 
     <main class="container">
       <section class="hero">
-        <h2>Manage Swarm clusters faster</h2>
-        <p>swarmcli provides a compact set of commands to inspect, list and manage services, nodes, and stacks in Docker Swarm.</p>
+        <h2 class="hero-title"><span class="gradient-text">SwarmCLI</span> <span class="hero-subtitle">the Terminal UI</span><br><span class="hero-subtitle">for Docker Swarm</span></h2>
+        <p>SwarmCLI is a k9s-inspired terminal interface for observing and managing services, nodes, tasks, networks, and volumes in Swarm clusters.</p>
         <p><a class="btn btn_gradient" href="/topics/install.html">Get started</a></p>
+        <div class="hero-media">
+          <img src="/assets/img/render1767373968753.gif" alt="Animated demo of SwarmCLI" />
+        </div>
+      </section>
+
+      <section class="context">
+        <div>
+          <h3>Why SwarmCLI</h3>
+          <p>Swarm lacks a first-class, keyboard-driven UI. SwarmCLI aims to fill that gap with a fast, curses-based experience for day-to-day cluster operations.</p>
+          <ul>
+            <li>Real-time views for nodes, services, tasks, and containers</li>
+            <li>Quick actions like scaling, updating, restarting, and removing resources</li>
+            <li>Low-dependency, easy-to-install CLI built for speed and clarity</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Project vision</h3>
+          <p>Inspired by k9s, the goal is to provide Swarm operators a focused, intuitive tool that stays close to the terminal while surfacing the right signals.</p>
+          <p class="muted">Early-stage and open to contributors, testers, and sponsors.</p>
+        </div>
+      </section>
+
+      <section class="roadmap">
+        <h3>Coming soon</h3>
+        <ul>
+          <li>Shell access to services</li>
+          <li>Kubernetes-style port forwarding</li>
+          <li>Secret handling</li>
+        </ul>
       </section>
 
       <section class="features">
@@ -48,20 +76,10 @@
           <p>Small codebase intended as a working model and learning resource.</p>
         </article>
       </section>
-
-      <section class="example">
-        <h3>Quick example</h3>
-        <pre><code>$ swarmctl nodes
-ID    HOST    STATUS  AVAIL  MANAGER
-1     node1   Ready   Active  Yes
-2     node2   Ready   Active  No
-</code></pre>
-      </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <small>Created from the working model of <a href="https://github.com/mosonyi/swarmcli">mosonyi/swarmcli</a>.</small>
       </div>
     </footer>
     <div class="bottom-lines" aria-hidden="true">

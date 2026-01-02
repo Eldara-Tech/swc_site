@@ -1,11 +1,11 @@
 ---
-title: swarmcli — lightweight Swarm management
+title: SwarmCLI — lightweight Swarm management
 layout: default
 ---
 
 <section class="hero">
   <h2>Manage Swarm clusters faster</h2>
-  <p>swarmcli provides a compact set of commands to inspect, list and manage services, nodes, and stacks in Docker Swarm.</p>
+  <p>SwarmCLI provides a compact set of commands to inspect, list and manage services, nodes, and stacks in Docker Swarm.</p>
   <p><a class="btn btn_gradient" href="/topics/install.html">Get started</a></p>
 </section>
 
