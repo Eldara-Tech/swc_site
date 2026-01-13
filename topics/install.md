@@ -13,7 +13,7 @@ layout: default
 ### Install from source
 
 ```bash
-git clone https://github.com/mosonyi/swarmcli.git
+git clone https://github.com/Eldara-Tech/swarmcli.git
 cd swarmcli
 go build -o swarmctl ./cmd/swarmctl
 sudo mv swarmctl /usr/local/bin/
@@ -22,6 +22,6 @@ sudo mv swarmctl /usr/local/bin/
 ### Docker image (if provided)
 
 ```bash
-docker pull mosonyi/swarmcli:latest
-docker run --rm -it --network host mosonyi/swarmcli swarmctl nodes
+docker pull eldara-tech/swarmcli:latest
+docker run --rm -it --network host eldara-tech/swarmcli swarmctl nodes
 ```

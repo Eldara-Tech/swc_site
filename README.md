@@ -11,7 +11,6 @@ Quick — serve the current directory (no build)
 - Change into the site folder and run a simple HTTP server:
 
 ```bash
-cd /opt/mosonyi/swarmcli/swc_site
 python3 -m http.server 8000
 # Open http://localhost:8000
 ```
@@ -22,7 +21,7 @@ Option: Node (quick)
 - Use `npx` to start a lightweight static server:
 
 ```bash
-cd /opt/mosonyi/swarmcli/swc_site
+cd /path/to/swarmcli/swc_site
 npx http-server -p 8000
 # or: npx serve -l 5000
 ```
@@ -31,7 +30,7 @@ Option: Docker (serve with nginx)
 - Run an nginx container serving the repository root:
 
 ```bash
-cd /opt/mosonyi/swarmcli/swc_site
+cd /path/to/swarmcli/swc_site
 docker run --rm -p 8080:80 -v "$PWD":/usr/share/nginx/html:ro nginx:alpine
 # Open http://localhost:8080
 ```
